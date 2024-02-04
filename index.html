@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Go Out With Me?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Go Out With Me?</h1>
+    <p>Hey [Crush],</p>
+    <p>I've been thinking about you a lot lately and I was wondering if you'd like to go out with me?</p>
+    <button onclick="alert('I would love to see you soon!')" id="yesButton">Yes</button>
+    <button onclick="handleNoButtonClick()" id="noButton">No</button>
+
+    <script>
+        function handleNoButtonClick() {
+            alert('I would still chase you tho');
+            document.getElementById('noButton').disabled = true;
+        }
+    </script>
+</body>
+</html>
